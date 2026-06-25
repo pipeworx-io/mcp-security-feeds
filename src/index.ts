@@ -42,6 +42,7 @@ const FEEDS: Record<string, FeedDef> = {
   'the-record': { title: "The Record", url: "https://therecord.media/feed/", category: "security", source: "therecord.media", description: "Cybersecurity & cybercrime news" },
   securityweek: { title: "SecurityWeek", url: "https://www.securityweek.com/feed/", category: "security", source: "securityweek.com", description: "Enterprise security news" },
   'cybersecurity-dive': { title: "Cybersecurity Dive", url: "https://www.cybersecuritydive.com/feeds/news/", category: "security", source: "cybersecuritydive.com", description: "Enterprise cybersecurity news" },
+  'arxiv-cs-cr': { title: "arXiv cs.CR", url: "https://rss.arxiv.org/rss/cs.CR", category: "security", source: "arxiv.org", description: "arXiv Cryptography & Security preprints (cs.CR)" },
 };
 
 const tools: McpToolExport['tools'] = [
