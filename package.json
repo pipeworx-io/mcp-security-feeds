@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-security-feeds",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Security Feeds MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-security-feeds": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "security-feeds"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-security-feeds.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/security-feeds",
   "pipeworx": {
-    "sourceHash": "v1-23e1561d902a3da5a3403dfb18a887986b45c9db4cfb5d21d3bc7a52995feea5",
-    "sourceCommit": "6fe8fb3e01138dfc4ebe7d5c246503aab9278d06"
+    "mode": "gateway",
+    "slug": "security-feeds",
+    "gatewaySlug": "security-feeds",
+    "sourceHash": "v1-3a29b56f0d30dd2447b748853a0b1e24026caa137910aecb8f1207e314999335",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
