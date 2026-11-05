@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-security-feeds",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Security Feeds MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "security-feeds",
     "gatewaySlug": "security-feeds",
-    "sourceHash": "v1-3a29b56f0d30dd2447b748853a0b1e24026caa137910aecb8f1207e314999335",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-372e6131081ec4f400d7846b69cde44a6bb32f2614a308343e344c19130ee369",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
